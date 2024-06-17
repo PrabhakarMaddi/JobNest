@@ -1,0 +1,516 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    background-color: rgb(228, 225, 225);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    z-index: 10;
+}
+
+.navbar h1 {
+    font-size:4vw;
+    padding: 0 2vw;
+}
+
+.quick-links {
+    display: flex;
+    gap: 1rem;
+    padding: 0 2vw;
+}
+
+.anchor:hover {
+    color: rgba(230, 124, 10, 0.913);
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    display: none;
+}
+
+
+
+
+.img-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%)
+}
+
+.display-page .content {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    color: rgba(225, 224, 224, 0.861);
+    transform: translate(-50%, -90%);
+    padding: 10px 20px;
+    text-align: center;
+    width: 90%;
+}
+
+.display-page .content h1 {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+}
+
+.display-page .content h3 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.display-page .content p {
+    font-size: 4vw;
+    margin-top: 6vw;
+    padding: 2vw;
+}
+
+.display-page .content span {
+    font-size: 2vw;
+    margin-top: 7vw;
+
+}
+
+.more-features h1 {
+    text-align: center;
+    background-color: rgb(228, 225, 225);
+    padding: 2vw;
+}
+
+.features {
+    display: flex;
+    width: 100%;
+}
+
+.left-worker {
+    width: 50%;
+    padding: 2vw 0 2vw 2vw;
+}
+
+.left-worker h3 {
+    margin: 1vw 0;
+}
+
+.left-worker ul {
+    margin-bottom: 1vw;
+    /* font-weight: 600; */
+    list-style: none;
+
+}
+
+.right-contractor {
+    width: 50%;
+    padding: 2vw 0 2vw 2vw;
+
+}
+
+.right-contractor h3 {
+    margin: 1vw 0;
+
+}
+
+.right-contractor ul {
+    margin-bottom: 1vw;
+    /* font-weight: 600; */
+    list-style: none;
+}
+
+.left-worker img {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    display: block;
+    opacity: 1.0;
+    object-fit: contain;
+    margin: 0 0 0vw 6vw;
+
+}
+
+.right-contractor img {
+    /* height: 20vw; */
+    width: 20vw;
+    border-radius: 50%;
+    display: block;
+    opacity: 1.0;
+    object-fit: fill;
+    margin: 3vw 0 1.6vw 7vw;
+}
+
+.our-services h1 {
+    text-align: center;
+    background-color: rgb(228, 225, 225);
+    padding: 2vw;
+    margin-top: 2vw;
+}
+
+.our-services h2 {
+    text-align: center;
+    font-size: 3vw;
+    color: rgba(230, 124, 10, 0.913);
+    padding: 2vw;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.workers {
+    box-sizing: border-box;
+    width: 30vw;
+    /* margin-left: 2vw; */
+    text-align: center;
+
+    /* box-shadow: inset; */
+}
+
+.workers img {
+    object-fit: cover;
+    height: 20vw;
+    width: 100%;
+    border-radius: 3vw;
+    transition: transform 0.50s;
+}
+
+.workers img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.workers h3 {
+    margin: 1vw 0;
+    font-size: 1.4vw;
+}
+button{
+    padding: 1.3vw;
+    border-radius: 2vw;
+    background-color: rgba(230, 124, 10, 0.913);
+    border: none;
+    transition: ease-in ;
+    margin-left: 14vw;
+ }
+ /* a{
+    color: white;
+    font-size: 1.2vw;
+ } */
+ button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    color: rgb(235, 235, 235);
+ 
+  }
+  .form-link{
+    box-sizing: border-box;
+    width:100%;
+    padding:2vw;
+    background-color: rgb(175, 173, 173);
+    margin-top: 3vw;
+    
+  }
+  .worker-side{
+    display: flex;
+  }
+  .matter{
+    width:50%;
+    margin-top: 1vw;
+  }
+  .matter p {
+    margin: 2vw 0;
+    font-size:1.5vw;
+  }
+  .image{
+    width:50%;
+    display:flex;
+    justify-content: center;
+  }
+  .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 5vw;
+  }
+  .contractor-side{
+    display: flex;
+    margin: 6vw 0 6vw 0;
+  }
+  .contractor-side .image img{
+    width:90%;
+    margin-right:3vw;
+  }
+  .contractor-side .matter h2{
+    margin:2vw 0;
+  }
+  .footer{
+    width: 100%;
+   
+    background-color: rgb(228, 225, 225);
+    padding: 5vw 0;
+
+    
+}
+   .copyrights{
+    display: flex;
+    padding: 2vw 3vw;
+    justify-content: space-between;
+
+}
+ .copyrights a{
+    text-decoration: none;
+    color:black;
+ }
+ .copyrights a:hover{
+        color:rgba(230, 124, 10, 0.913) ;
+    }
+li{
+   list-style: none;
+
+}
+@media (max-width :600px) {
+
+    .navbar h1 {
+        font-size: 8vw;
+        padding: 0 2vw;
+    }
+
+    .navbar .anchor {
+        display: none;
+    }
+
+    .navbar .icon {
+        display: inline;
+        font-size: 6vw;
+    }
+
+    .img-container img {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .display-page .content {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        color: rgba(225, 224, 224, 0.861);
+        transform: translate(-50%, -90%);
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .display-page .content h1 {
+        font-size: 9vw;
+        padding: 3vw;
+        ;
+        margin-bottom: 4vw;
+    }
+
+    .display-page .content h3 {
+        font-size: 4.5vw;
+        padding: 3vw;
+        row-gap: 2vw;
+    }
+
+    .display-page .content p,
+    .display-page .content span {
+        font-size: 5vw;
+        margin-top: 8vw;
+
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-worker {
+        width: 100%;
+        padding: 5vw 0 5vw 4vw;
+        box-sizing: border-box;
+
+    }
+
+    .left-worker h3 {
+        margin: 3vw 0;
+    }
+
+    .left-worker ul {
+        margin-bottom: 4vw;
+        /* font-weight: 600; */
+    }
+
+    .right-contractor {
+        width: 100%;
+        padding: 5vw 0 5vw 4vw;
+        box-sizing: border-box;
+
+    }
+
+    .right-contractor h3 {
+        margin: 3vw 0;
+
+    }
+
+    .right-contractor ul {
+        margin-bottom: 4vw;
+        /* font-weight: 600; */
+    }
+
+    .left-worker img {
+        height: 70vw;
+        width: 70vw;
+        border-radius: 50%;
+        display: block;
+        opacity: 1.0;
+        object-fit: contain;
+        margin-left: 10vw;
+
+    }
+
+    .right-contractor img {
+        /* height: 20vw; */
+        width: 70vw;
+        border-radius: 50%;
+        display: block;
+        opacity: 1.0;
+        object-fit: fill;
+        margin: 8vw 0 9vw 11vw;
+    }
+
+    .our-services h1 {
+        font-size: 5vw;
+        padding: 4vw 0;
+        margin: 6vw 0;
+    }
+    .our-services h2 {
+        font-size: 7.9vw;
+        padding-bottom: 6vw ;
+        /* margin: 6vw 0; */
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: space-around;
+    }
+
+    .workers {
+        box-sizing: border-box;
+        width: 40vw;
+        /* height: 30vw; */
+        margin: 0.5vw;
+        text-align: center;
+
+        /* box-shadow: inset; */
+    }
+
+    .workers img {
+        object-fit: cover;
+        height: 40vw;
+        width: 100%;
+        border-radius: 3vw;
+        transition: transform 0.50s;
+    }
+
+    .workers img:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    .workers h3 {
+        margin: 1vw 0;
+        font-size: 3.5vw;
+    }
+    .form-link{
+        box-sizing: border-box;
+        width:100%;
+        padding:4vw;
+        background-color: rgb(175, 173, 173);
+        margin-top: 15vw;
+        
+      }
+      .worker-side{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .matter{
+        width:100%;
+        margin-top: 7vw;
+      }
+      .matter p {
+        margin: 4vw 0;
+        font-size:5vw;
+      }
+      .image{
+        width:100%;
+        
+      
+
+      }
+      .image img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 6vw;
+      }
+      .contractor-side{
+        display: flex;
+        flex-direction: column;
+        margin: 6vw 0 6vw 0;
+      }
+      .contractor-side .image img{
+        width:90%;
+        margin-right:3vw;
+      }
+      .contractor-side .matter h2{
+        margin:2vw 0;
+      }
+      button{
+        padding: 2vw;
+        border-radius: 2vw;
+        background-color: rgba(230, 124, 10, 0.913);
+        border: none;
+        transition: ease-in ;
+        margin-left: 26vw;
+        margin-bottom: 4vw;
+     }
+     a{
+        color: white;
+        font-size: 4.3vw;
+     }
+     button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+        color: rgb(235, 235, 235);
+     
+      }
+}

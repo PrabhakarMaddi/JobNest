@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor-Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="worker-details.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div>
+                <h1><a href="#" class="logo">JobNest</a></h1>
+            </div>
+            <div class="quick-links">
+                <h4><a href="#" class="anchor">Home</a></h4>
+                <h4><a href="#" class="anchor">About Us </a></h4>
+                <h4><a href="#" class="anchor">Contact Us</a></h4>
+                <h4><a href="#" class="anchor">Help</a></h4>
+                <h4 class="icon"><i class="ri-menu-fill"></i></a></h4>
+            </div>
+        </div>
+        <div class="details">
+            <div id="form-details">
+                <div id="heading">
+                    <h1>Contractor-Details</h1>
+                </div>
+                <form>
+                    <div class="forms" >
+                        <label for="name">Name : </label>
+                        <input type="text" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="forms">
+                        <label for="mobilenumber">Mobile number : </label>
+                        <input type="tel"  id="mobilenumber" placeholder="Enter Mobile Number" required>
+                    </div>
+                    <div class="forms" >
+                        <label for="dob">Date Of Birth : </label>
+                        <input type="date" id="dob" placeholder="Enter Date of Birth" required>
+                    </div>
+                    <div class="forms">
+                        <label for="gender" name="gender">Gender : </label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Others</option>
+                        </select>
+                    </div>
+                    <div class="forms">
+                        <label for="aadhar">Aadhar number : </label>
+                        <input type="text" id="name" placeholder="Enter Aadhar number" required>
+                    </div>
+                    <div class="forms">
+                        <label for="prefer-location" name="location">Preferred Location : </label>
+                        <select name="location" id="prefer-location">
+                            <option value="Duvvada">Duvvada</option>
+                            <option value="Kurmannapalem">Kurmannapalem</option>
+                            <option value="Gajuwaka">Gajuwaka</option>
+                            <option value="Pendurthi">Pendurthi</option>
+                            <option value="Maddilapalem">Maddilapalem</option>
+                            <option value="Anakapalle">Anakapalle</option>
+                            <option value="Gurudwar">Gurudwar</option>
+                            <option value="Yendada">Yendada</option>
+                            <option value="Simhachalam">Simhachalam</option>
+                            <option value="S.Kota">S.Kota</option>
+                            <option value="GopalaPatnam">GopalaPatnam</option>
+                            <option value="Aarilova">Aarilova</option>
+                            <option value="Vizag">Vizag</option>
+                            <option value="Yelamanchili">Yelamanchili</option>
+                            <option value="Tagarapuvalasa">Tagarapuvalasa</option>
+                            <option value="Sangivalasa">Sangivalasa</option>
+                            <option value="Vizianagaram">Vizianagaram</option>
+                        </select>
+                    </div>
+                    <div class="forms">
+                        <label for="worker-title">Specify Job Title : </label>
+                        <select name="worker-title" id="worker-title">
+                            <option value="Construction worker">Construction worker</option>
+                            <option value="Mason">Mason</option>
+                            <option value="Carpenter">Carpenter</option>
+                            <option value="Electrician">Electrician</option>
+                            <option value="Plumber">Plumber</option>
+                            <option value="Agricultural Chores">Agricultural Chores</option>
+                            <option value="Home Maintanance">Home Maintanance</option>
+                            <option value="Waiter">Waiter</option>
+                            <option value="Watchman">Watchman</option>
+                            <option value="Municipal worker">Municipal worker</option>
+                            <option value="Barber">Barber</option>
+                            <option value="Tailor">Tailor</option>
+                            <option value="Factory works">Factory works</option>
+                            <option value="Packaging">Packaging</option>
+                            <option value="Loading and Unloading">Loading and Unloading</option>
+                        </select>
+                    </div>
+                    <div class="forms">
+                        <label for="work-period">Work-Period : </label>
+                        <input type="text" name="work-period" id="work-period" placeholder="Enter required work period" required>
+                    </div>
+                    <div class="forms">
+                        <label for="wage">Offered wage : </label>
+                        <input type="number" name="wage" id="wage" placeholder="Enter Offering wage" required>
+                    </div>
+                    <div class="forms" id="btn">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn=document.querySelector("button")
+        btn.addEventListener("click",()=>{
+            alert("Your Form is Submitted Succesfully !")
+            
+        })
+    </script>
+</body>
+</html>

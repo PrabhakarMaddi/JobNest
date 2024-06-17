@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: rgba(230, 124, 10, 0.913);
+    color: white;
+    border: none;
+    transition: ease-in;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    color: rgb(235, 235, 235);
+
+}
+ h1 span{
+    color:rgba(230, 124, 10, 0.913) ;
+}
+.navbar {
+    background-color: rgb(228, 225, 225);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.navbar h1 {
+    font-size: 4vw;
+    padding: 0 2vw;
+}
+
+.quick-links {
+    display: flex;
+    gap: 1rem;
+    padding: 0 2vw;
+}
+
+.anchor:hover {
+    color: rgba(230, 124, 10, 0.913);
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    display: none;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 3vw 0;
+
+}
+ 
+
+.forms {
+    height: 40vw;
+    width: 50%;
+    background-color:rgb(245, 242, 238);
+}
+
+form {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    width: 80%;
+    height: 3vw;
+    border-radius: 1vw;
+    margin: 0.3vw 0;
+}
+
+.miscal {
+    margin-top: 2vw;
+}
+
+.miscal a {
+    color: orange;
+}
+
+@media (max-width:600px) {
+    .navbar h1 {
+        font-size: 8vw;
+        padding: 0 2vw;
+    }
+
+    .navbar .anchor {
+        display: none;
+    }
+
+    .navbar .icon {
+        display: inline;
+        font-size: 6vw;
+    }
+    form{
+    height: calc(100vh - 300px);
+
+    }
+    .forms {
+        height:100vw;
+        width: 100%;
+        background-color: white;
+    }
+    input {
+        text-align: center;
+        width: 80%;
+        height: 8vw;
+        border-radius: 1.5vw;
+        margin: 2vw 4vw;
+    }
+  button{
+    margin:18vw;
+    padding:4vw;
+    font-size: 4vw;
+    border-radius: 6vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+}
